@@ -4,4 +4,5 @@ default:
     dev:
       type: duckdb
       path: my_database.duckdb
-      schema: main 
+      database: my_database
+      schema: main
