@@ -1,5 +1,5 @@
 {
-  "dbt.profilesDirOverride": "${workspaceFolder}",
+  "dbt.profilesDirOverride": "C:\\Users\\rothl\\Desktop\\Analytics Engineering\\Analytics_Engineering_dbt",
   "terminal.integrated.env.osx": {
     "DBT_PROFILES_DIR": "${workspaceFolder}"
   },
@@ -12,5 +12,6 @@
   "files.associations": {
     "*.sql": "jinja-sql",
     "*.mmd": "mermaid"
-  }
+  },
+  "dbt.dbtPythonPathOverride": "C:\\Users\\rothl\\Desktop\\Analytics Engineering\\Analytics_Engineering_dbt\\.venv\\Scripts\\python.exe"
 }

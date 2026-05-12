@@ -181,7 +181,24 @@ dbt test
 dbt debug  # To check connection
 ```
 
-### 7. VSCode dbt Power User Extension
+### 7. Query DuckDB Models from the Terminal (Shortcut)
+
+To quickly query a dbt model without opening a full Python session, add this function to your PowerShell profile (`notepad $PROFILE`):
+
+```powershell
+function dbq { uv run python -c "import duckdb; conn = duckdb.connect('my_database.duckdb'); conn.sql('$args').show()" }
+```
+
+Then from your project folder you can run:
+
+```powershell
+dbq "select * from stg_customers"
+dbq "select * from stg_orders limit 10"
+```
+
+> Make sure you've run `dbt run -s <model_name>` first — the model must exist in the database before you can query it.
+
+### 8. VSCode dbt Power User Extension
 
 To enhance your dbt development experience, consider installing the [VSCode dbt Power User](https://marketplace.visualstudio.com/items?itemName=calogica.vscode-dbt-power-user) extension. This extension provides features like syntax highlighting, autocompletion, and snippets for dbt projects.
 

@@ -1,8 +1,8 @@
 dbq:
-	@duckdb my_database.duckdb -c "$(filter-out $@,$(MAKECMDGOALS))"
+	@uv run python -c "import duckdb; conn = duckdb.connect('my_database.duckdb'); conn.sql('$(filter-out $@,$(MAKECMDGOALS))').show()"
 
 schema:
-	@duckdb my_database.duckdb -c "describe $(filter-out $@,$(MAKECMDGOALS))"
+	@uv run python -c "import duckdb; conn = duckdb.connect('my_database.duckdb'); conn.sql('describe $(filter-out $@,$(MAKECMDGOALS))').show()"
 
 %:
 	@:
