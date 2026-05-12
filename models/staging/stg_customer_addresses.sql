@@ -5,7 +5,7 @@ select
     street_address,
     city,
     state,
-    postal_code, 
+    postal_code,
     country,
     is_default
 from {{ source('raw', 'customer_addresses') }}
