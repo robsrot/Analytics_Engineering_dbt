@@ -1,5 +1,11 @@
 {
+<<<<<<< HEAD
   "dbt.profilesDirOverride": "C:\\Users\\rothl\\Desktop\\Analytics Engineering\\Analytics_Engineering_dbt",
+=======
+  "dbt.profilesDirOverride": "${workspaceFolder}",
+  "dbt.dbtPythonPathOverride": "${workspaceFolder}/.venv/bin/python",
+  "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+>>>>>>> f421614149b3db5caeb63c3363728c2ac4b0d7ff
   "terminal.integrated.env.osx": {
     "DBT_PROFILES_DIR": "${workspaceFolder}"
   },
@@ -13,5 +19,10 @@
     "*.sql": "jinja-sql",
     "*.mmd": "mermaid"
   },
+<<<<<<< HEAD
   "dbt.dbtPythonPathOverride": "C:\\Users\\rothl\\Desktop\\Analytics Engineering\\Analytics_Engineering_dbt\\.venv\\Scripts\\python.exe"
 }
+=======
+  "dbt.perspectiveTheme": "Vintage"
+}
+>>>>>>> f421614149b3db5caeb63c3363728c2ac4b0d7ff
